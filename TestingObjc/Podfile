@@ -7,7 +7,7 @@ sonarkit_version = '0.6.13'
 
 target 'TestingObjc' do
 
-  pod 'SonarKit', '~>'+sonarkit_version
+  pod 'SonarKit', :git => 'https://github.com/noahsark769/Sonar.git', :branch => 'fix_objc_swift_builds'
   post_install do |installer|
         installer.pods_project.targets.each do |target|
             if ['YogaKit'].include? target.name
