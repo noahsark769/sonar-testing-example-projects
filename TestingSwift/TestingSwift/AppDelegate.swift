@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     #if DEBUG
     let client = SonarClient.shared()!
-    client.add(CoordinatesSonarPlugin())
     client.start()
     #endif
     NSLog("Hello from TestingSwift")

@@ -33,7 +33,7 @@ PODS:
   - SonarKit/FBDefines (0.6.13)
 
 DEPENDENCIES:
-  - SonarKit (~> 0.6.13)
+  - SonarKit (from `https://github.com/noahsark769/Sonar.git`, branch `fix_objc_swift_builds`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -48,7 +48,16 @@ SPEC REPOS:
     - PeerTalk
     - RSocket
     - Sonar
-    - SonarKit
+
+EXTERNAL SOURCES:
+  SonarKit:
+    :branch: fix_objc_swift_builds
+    :git: https://github.com/noahsark769/Sonar.git
+
+CHECKOUT OPTIONS:
+  SonarKit:
+    :commit: ec594befcf7db3864dd78d417c664e435f41e5f9
+    :git: https://github.com/noahsark769/Sonar.git
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
@@ -61,8 +70,8 @@ SPEC CHECKSUMS:
   PeerTalk: 77481b0a8136f226b90ccf828d6061f70139ffde
   RSocket: 4fdb7e562db30a2d4fceddefdc601749ffc9ebe2
   Sonar: 9add2dabe3b3e7a09e162e41e5da570434f0324a
-  SonarKit: 3dcc39f5863c6552c05c1808d7e1b7baad0608eb
+  SonarKit: 250a0899d77484c51db55c70d5bf4803b06ba74a
 
-PODFILE CHECKSUM: 3f74fc3422509ee79716f2c9d11f8e3f814e1c02
+PODFILE CHECKSUM: 5236c00f5ad34dfb3b253128676a7d9ab0688cda
 
 COCOAPODS: 1.5.3
