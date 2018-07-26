@@ -20,7 +20,6 @@
   // Override point for customization after application launch.
 #if DEBUG
   SonarClient *client = [SonarClient sharedClient];
-  [client addPlugin:[MySonarPlugin new]];
   [client start];
 #endif
 
