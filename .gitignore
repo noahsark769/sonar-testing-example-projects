@@ -1,0 +1,11 @@
+*.xcodeproj/project.xcworkspace
+*.xcodeproj/xcuserdata
+*.xcworkspace/xcuserdata
+xcuserdata
+*.xccheckout
+*.xcscmblueprint
+*.pbxuser
+.DS_Store
+
+# Generated files for CocoaPods
+Pods
