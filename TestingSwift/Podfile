@@ -1,0 +1,20 @@
+project 'TestingSwift.xcodeproj'
+source 'https://github.com/facebook/Sonar.git'
+source 'https://github.com/CocoaPods/Specs'
+
+swift_version = "4.1"
+sonarkit_version = '0.6.13'
+
+target 'TestingSwift' do
+
+  pod 'SonarKit', '~>'+sonarkit_version
+  post_install do |installer|
+        installer.pods_project.targets.each do |target|
+            if ['YogaKit'].include? target.name
+                target.build_configurations.each do |config|
+                    config.build_settings['SWIFT_VERSION'] = swift_version
+                end
+            end
+        end
+    end
+end
