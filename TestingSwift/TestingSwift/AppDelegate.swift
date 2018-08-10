@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let client = SonarClient.shared()!
     client.start()
     #endif
-    NSLog("Hello from TestingSwift")
+    NSLog("Hello from Flipper in a Swift app")
 
     return true
   }
